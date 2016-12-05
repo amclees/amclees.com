@@ -1,0 +1,7 @@
+{
+  "name": "Homepage",
+  "short_name": "Homepage",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "orientation": "portrait"
+}
