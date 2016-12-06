@@ -8,16 +8,16 @@ angular.
           templateUrl: '/templates/homepage.template.html'
         }).
         when('/github', {
-          template: '<h2>Github</h2>'
+          template: '/templates/github.template.html'
         }).
         when('/projects', {
-          template: '<h2>Projects</h2>'
+          template: '/templates/projects.template.html'
         }).
         when('/about', {
-          template: '<h2>About</h2>'
+          template: '/templates/about.template.html'
         }).
         when('/contact', {
-          template: '<h2>Contact</h2>'
+          template: '/templates/contact.template.html'
         }).
         otherwise('/');
     }
