@@ -7,9 +7,6 @@ angular.
         when('/', {
           templateUrl: '/templates/homepage.template.html'
         }).
-        when('/github', {
-          templateUrl: '/templates/github.template.html'
-        }).
         when('/projects', {
           templateUrl: '/templates/projects.template.html'
         }).
