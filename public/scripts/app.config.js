@@ -14,7 +14,8 @@ angular.
           templateUrl: '/templates/about.template.html'
         }).
         when('/contact', {
-          templateUrl: '/templates/contact.template.html'
+          templateUrl: '/templates/contact.template.html',
+          controller: 'contactController'
         }).
         otherwise({
           templateUrl: '/templates/404.template.html'

@@ -1,3 +1,3 @@
-angular.module('homepageApp', [
+var app = angular.module('homepageApp', [
   'ngRoute'
 ]);
