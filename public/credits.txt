@@ -1,0 +1,7 @@
+The image at /images/csula-sign.jpg is licensed under the following Creative Commons license:
+https://creativecommons.org/licenses/by/3.0/deed.en
+The author is Wikipedia user Justefrain.
+The image is used without endorsement, but with permission granted by the license.
+The image has been cropped.
+
+Credit to https://github.com/jeanmatthieud for angular directive to close the small screen drawer navigation menu after a link is clicked. Solution modified to toggle visibility of the focus as well as the drawer.

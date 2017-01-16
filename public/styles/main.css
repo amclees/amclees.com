@@ -6,10 +6,20 @@
 	height: 100px;
 }
 .ang-view {
-	
+
 }
 .project-header {
 	text-align: center;
+}
+.home-header {
+	text-align: center;
+	margin: 0px;
+	color: #FFF;
+}
+.welcome-text {
+	color: #A6E22E;
+	font-family: "Consolas";
+	font-size: 14px;
 }
 .card-header {
 	background-color: #2196F3;
@@ -61,6 +71,61 @@
 }
 .blue-link {
 	color: #2196F3;
+}
+.csula-header {
+	background-image: url('/images/csula-sign.jpg');
+	background-size: 100% 400px;
+	background-position: center center; 
+	background-repeat: no-repeat;
+}
+.center-grid {
+	justify-content: center;
+}
+.home-grid {
+	background-color: #292929;
+}
+.center-cell {
+	text-align: center;
+}
+.home-link {
+	font-size: 16px;
+}
+.home-intro {
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-top: 2%;
+}
+.page-break {
+	background-color: #2196F3;
+	color: #FFF;
+	font-size: 24px;
+	height: auto;
+	box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+	padding: 5px;
+}
+.page-break > h3 {
+	text-align: center;
+	vertical-align: middle;
+	margin: auto;
+}
+.skills-grid {
+	background-image: url('/images/skills-snip.png');
+}
+.home-interest {
+	color: #FFF; 
+	padding: 4px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.pad-cell {
+	padding-bottom: 2000px;
+}
+.name-link {
+	font-size: 32px;
+}
+.overflow-grid {
+	overflow: hidden;
+	height: 400px;
 }
 a {
 	text-decoration: none;

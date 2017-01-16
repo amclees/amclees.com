@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="homepageApp">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="manifest" href="manifest.json">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Information about Andrew McLees" />
+  <meta name="keywords" content="Andrew,McLees,software,developer" />
+  <meta name="author" content="Andrew McLees" />
+  <link rel="manifest" href="manifest.json" />
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.blue-deep_orange.min.css" />
   <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
 
-  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="/styles/main.css" />
 
   <title>Andrew McLees</title>
 </head>
@@ -17,34 +21,29 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title"><a class="mdl-navigation__link" href="#/" ng-href="#/"><h4>Andrew McLees</h4></a></span>
+        <span class="mdl-layout-title"><h4><a class="mdl-navigation__link name-link" href="#/" ng-href="#/">Andrew McLees</a></h4></span>
         <div class="mdl-layout-spacer"></div>
         <nav class="mdl-navigation mdl-layout--large-screen-only">
           <a class="mdl-navigation__link" href="#/aboutme" ng-href="#/about">About</a>
           <a class="mdl-navigation__link" href="#/projects" ng-href="#/projects">My Projects</a>
-          <a class="mdl-navigation__link" href="http://www.github.com/amclees" target="_blank" rel="rel=noopener noreferrer">Github</a>
+          <a class="mdl-navigation__link" href="https://www.github.com/amclees" target="_blank" rel="rel=noopener noreferrer">GitHub</a>
           <a class="mdl-navigation__link" href="#/contactme" ng-href="#/contact">Contact</a>
         </nav>
-        <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
-        <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
-          <i class="material-icons">search</i>
-        </label>
-        <div class="mdl-textfield__expandable-holder">
-          <input class="mdl-textfield__input" type="text" id="search">
-        </div>
-      </div>
       </div>
     </header>
 
+    <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="#/aboutme" ng-href="#/about" close-menu-item>About</a>
+        <a class="mdl-navigation__link" href="#/projects" ng-href="#/projects" close-menu-item>My Projects</a>
+        <a class="mdl-navigation__link" href="https://www.github.com/amclees" target="_blank" rel="rel=noopener noreferrer" close-menu-item>GitHub</a>
+        <a class="mdl-navigation__link" href="#/contactme" ng-href="#/contact" close-menu-item>Contact</a>
+      </nav>
+    </div>
+
     <main class="mdl-layout__content">
         <span ng-view class="ang-view">
-          <div class="mdl-grid mdl-grid--no-spacing loading-grid">
-            <div class="mdl-layout-spacer"></div>
-            <div class="mdl-cell mdl-cell--4-col mdl-cell--middle">
-              <div class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
-            </div>
-            <div class="mdl-layout-spacer"></div>
-          </div>
+          <div class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
         </span>
     </main>
 
@@ -56,13 +55,17 @@
         </ul>
       </div>
       <div class="mdl-mini-footer__right-section">
-        <span>© Andrew McLees 2016 - All Rights Reserved</span>
+        <span>Page © Andrew McLees 2016 - All Rights Reserved. 
+          <br />
+          Some elements seperately licensed, view <a href="/credits.txt">the credit page</a> for attributions.
+        </span>
       </div>
     </footer>
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
+  <!-- Future Scripts, not needed now
   <script src="https://www.gstatic.com/firebasejs/3.6.0/firebase.js"></script>
   <script src="https://cdn.firebase.com/libs/angularfire/2.1.0/angularfire.min.js"></script>
   <script>
@@ -76,9 +79,11 @@
     };
     firebase.initializeApp(config);
   </script>
+  -->
 
   <script src="/scripts/app.module.js"></script>
   <script src="/scripts/app.config.js"></script>
   <script src="/scripts/contact.controller.js"></script>
+  <script src="/scripts/drawer-close.directive.js"></script>
 </body>
 </html>

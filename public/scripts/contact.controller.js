@@ -2,8 +2,7 @@ app.controller('contactController', function($scope) {
 	$scope.email = "Please wait...";
 	$scope.phone = "Please wait...";
 
-	setTimeout(putEmail, 2000);
-	setTimeout(putPhone, 2000);
+	setTimeout(putEmail, 1000);
 
 	function putEmail() {
 		$scope.email = "mai";
@@ -16,9 +15,4 @@ app.controller('contactController', function($scope) {
 		$scope.$apply();
 	}
 
-	function putPhone() {
-		x = 3;
-		$scope.phone = "(" + ((3 * 100) + (2 * 2 * 2.5)) + ") " + ((120 * 3) + 20 + 100  + (3 * x)) + "-" + ((3500 * 2) + (10 * 5 * 3 * 2) + (5 * 5 * 3) - 25);
-		$scope.$apply();
-	}
 });
