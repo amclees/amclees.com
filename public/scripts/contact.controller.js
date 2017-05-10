@@ -1,8 +1,7 @@
 app.controller('contactController', function($scope) {
 	$scope.email = "Please wait...";
-	$scope.phone = "Please wait...";
 
-	setTimeout(putEmail, 1000);
+	setTimeout(putEmail, 5);
 
 	function putEmail() {
 		$scope.email = "mai";
@@ -11,7 +10,7 @@ app.controller('contactController', function($scope) {
 		$scope.email = "drewmclees" + $scope.email;
 		$scope.email = "an" + $scope.email;
 		split = $scope.email.split("@");
-		$scope.email = split[0] + "5@" + split[1]; 
+		$scope.email = split[0] + "5@" + split[1];
 		$scope.$apply();
 	}
 
